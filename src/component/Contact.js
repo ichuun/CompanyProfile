@@ -1,9 +1,9 @@
 import React from "react";
 
 const Contact = () => {
-    return(
-        <section className="w-full h-[300px] lg:h-[400px]">
-            <div className="container mx-auto py-[50px]">
+    return (
+        <section className="w-full h-[300px] lg:h-[400px]" id='contact'>
+            <div className="container mx-auto py-[50px] md:py-[120px]">
                 <h1 className="text-center text-2xl mb-[20px] font-bold">Contact Us</h1>
                 <div className="text-center">
                     <p>Our Mailing Addres is</p>

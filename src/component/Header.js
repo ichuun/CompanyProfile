@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react"
 import { navigation } from "../data"
 
 
-const Header = ()=> {
+const Header = () => {
     const [bg, setBg] = useState(false);
 
-    useEffect (()=>{
-        window.addEventListener('scroll', ()=>{
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
             return window.scrollY > 50 ? setBg(true) : setBg(false)
         })
     })
@@ -19,10 +19,10 @@ const Header = ()=> {
                     </div>
                     <div>
                         <ul className="flex gap-x-5 lg:gap-x-10">
-                            {navigation.map((item, index)=>{
-                                return(
+                            {navigation.map((item, index) => {
+                                return (
                                     <li key={index}>
-                                        <a className='hover:border-b' href=''>{item.name}</a>
+                                        <a className='hover:border-b' href={item.href}>{item.name}</a>
                                     </li>
                                 )
                             })}
